@@ -8,7 +8,7 @@ import "./index.scss";
 
 const rootElement = document.getElementById("root");
 
-ReactDOM.render(
+render(
   <React.StrictMode>
     <BrowserRouter>
       <UserProvider>
