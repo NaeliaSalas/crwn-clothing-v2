@@ -1,7 +1,8 @@
 import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import { ProductsProvider } from "./contexts/products.context";
+import { CategoriesProvider } from "./contexts/categories.context";
+// import { CategoriesProvider } from "./contexts/categories.context";
 import { CartProvider } from "./contexts/cart.context";
 
 import App from "./App";
@@ -13,13 +14,13 @@ const rootElement = document.getElementById("root");
 render(
   <React.StrictMode>
     <BrowserRouter>
-      <ProductsProvider>
         <UserProvider>
+      <CategoriesProvider>
           <CartProvider>
             <App />
           </CartProvider>
+      </CategoriesProvider>
         </UserProvider>
-      </ProductsProvider>
     </BrowserRouter>
   </React.StrictMode>,
   rootElement
