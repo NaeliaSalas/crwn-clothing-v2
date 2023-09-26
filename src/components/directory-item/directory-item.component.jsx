@@ -10,9 +10,7 @@ const onNavigateHandler = () => navigate(route)
 
   return (
     <DirectoryItemContainer onClick={onNavigateHandler}>
-      <BackgroundImage
-        imageUrl={imageUrl}
-      
+      <BackgroundImage imageUrl={imageUrl}
       />
       <Body className="">
         <h2>{title}</h2>
